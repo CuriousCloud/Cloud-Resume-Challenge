@@ -1,0 +1,111 @@
+body {
+  background-color: #E7E7DF;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+hr {
+  border-style: line none none;
+  border-width: 2px;
+  width: 80%;
+  margin-left: 0;
+}
+
+.headerline {
+  width: 80%;
+}
+
+.dottedline {
+  border-style: dotted none none;
+  border-width: 4px;
+  width: 30%;
+  margin-left: 10px;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 1.5em 1fr 1fr 1.5em;
+  grid-template-rows: auto;
+  grid-column-gap: 3em;
+  grid-row-gap: 2em;
+  grid-template-areas:
+    ". name contact ."
+    ". coursework education ."
+    ". work projects-skills ."
+    ". work projects-skills ."
+    ". counter counter .";
+}
+
+.name {
+  grid-area: name;
+  align-self: center;
+  justify-self: start;
+}
+
+.myname {
+  font-size: 2.5rem;
+}
+
+.contact {
+  grid-area: contact;
+  place-self: center center;
+}
+
+.icon {
+  color: black;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.icon:hover {
+  color: #2180f8;
+}
+
+.coursework {
+  grid-area: coursework;
+}
+
+.work {
+  grid-area: work;
+}
+
+.education {
+  grid-area: education;
+}
+
+.projects-skills {
+  grid-area: projects-skills;
+}
+
+.counter {
+  margin-top: 2.5em;
+  grid-area: counter;
+  place-self: center center;
+  font-size: 2 rem;
+}
+
+#count {
+  text-align: center;
+}
+
+.skills {
+  margin-top: 2.5em;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .resume {
+    grid-template-columns: 1.5em 1fr 1.5em;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". name ."
+      ". contact ."
+      ". education ."
+      ". coursework ."
+      ". projects-skills ."
+      ". work ."
+      ". counter .";
+  }
+}

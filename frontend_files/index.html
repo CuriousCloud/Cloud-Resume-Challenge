@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Nicole Leadley's Resume</title>
+
+  <meta charset="utf-8">
+
+  <!-- Responsiveness for Chrome and IE -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheets -->
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <article class="resume">
+
+    <section class="name">
+      <h1 class="myname">Nicole M. Leadley</h1>
+      <p class="title"><strong>AWS Cloud Practitioner | Dentist</strong></p>
+    </section>
+
+    <section class="contact">
+      <p>Jay, NY 12941</p>
+      <p>curiouscloud.nml@gmail.com<br />
+        719-247-6572</p>
+
+      <a class="icon" href="https://github.com/CuriousCloud" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/nicole-leadley/" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      <a class="icon" href="Cloud Resume Final.pdf" target="_blank" download>
+        <ion-icon name="cloud-download"></ion-icon>
+      </a>
+    </section>
+
+    <section class="education">
+      <hr class="headerline">
+      <h3>Education</h3>
+      <hr class="headerline">
+      <p><strong>Creighton School of Dentistry</strong>, <em>Doctor of Dental Surgery</em></p>
+      <p>2006-2010, Omaha, NE</p>
+      <hr class="dottedline">
+      <p><strong>Clarkson University</strong>, <em>B.S. in Chemical Engineering</em></p>
+      <p>1990-1994, Potsdam, NY</p>
+    </section>
+
+    <section class="coursework">
+      <hr class="headerline">
+      <h3>Relevant Coursework</h3>
+      <hr class="headerline">
+      <ul>
+        <li>EdX-MITx:6.00.1x: Introduction to Computer Science and Programming Using Python</li>
+        <li>Automate the Boring Stuff with Python</li>
+        <li>AWS Solutions Architect Associate Course by A. Cantrillo</li>
+        <li>RHCSA Certification Guide and Video Course by S. VanVugt</li>
+        <li>KodeKloud's Terraform for Beginners Course</li>
+        <li>KodeKloud's DevOps Prerequisites Course</li>
+        <li>KodeKloud's Linux Basics Course</li>
+        <li>Incident Handling and Response Process for AWS Cloud Bootcamp by INE</li>
+        <li>Ethical Hacking and Penetration Testing Prerequisites by INE</li>
+        <li>Introduction to Networking Technologies by INE</li>
+        <li>The Complete 2020 Web Development Bootcamp by A. Yu</li>
+      </ul>
+    </section>
+
+    <section class="projects-skills">
+      <div class="projects">
+        <hr>
+        <h3 class="projects">Projects in Progress</h3>
+        <hr>
+        <li>AWS Solutions Architect Associate Certificate</li>
+        <li>Linux RHCSA Certificate</li>
+        <li>KodeKloud Engineer</li>
+        <ul>
+          <li>Hands-on labs that begin with Linux SysAdmin skills and progress to advanced DevOps Engineer skills
+        </ul>
+        <li>Cloud Resume Challenge:</li>
+        <ul>
+          <li>Building a serverless, static S3 website for resume using: AWS Cloud, Python, IaaC, and CI/CD
+        </ul>
+      </div>
+
+      <div class="skills">
+        <hr>
+        <h3>Skills</h3>
+        <hr>
+        <li>AWS Cloud
+        <li>Terraform</li>
+        <li>Docker</li>
+        <li>Red Hat and Ubuntu Linux</li>
+        <li>Python</li>
+        <li>Git</li>
+        <li>Basic Networking</li>
+        <li>HTML and CSS</li>
+      </div>
+    </section>
+
+    <section class="work">
+      <hr>
+      <h3>Work History</h3>
+      <hr>
+      <p><strong>P&R Dental Strategies</strong>, <em>Dental Consultant</em></p>
+      <p>06/2018-Present, Remote</p>
+      <ul>
+        <li>Efficiently and accurately review dental claims using radiographs, treatment notes and narrative for medical<br />
+          necessity within the insurers' contract language</li>
+        <li>Perform peer to peer consultation with treating dentists explaining claim review outcomes</li>
+      </ul>
+      <hr>
+      <p><strong>Visiting Ancillary Services</strong>, <em>Traveling Dentist</em></p>
+      <p>04/2016-09/2018, Denver, CO</p>
+      <ul>
+        <li>Traveled throughout the Front Range of Colorado providing dental care to nursing home residents</li>
+        <li>Practiced comprehensive and compassionate general dentistry on wheelchair and bed-bound patients</li>
+      </ul>
+      <hr>
+      <p><strong>Gold Rush Dental</strong>, <em>Dentist / Owner</em></p>
+      <p>03/2013-05/2017, Cripple Creek, CO</p>
+      <ul>
+        <li>Practiced comprehensive general dentistry in rural two chair practice</li>
+        <li>Managed staff, performed end of month, payroll, etc., as well as IT support and SysAdmin roles</li>
+      </ul>
+      <hr>
+      <p><strong>Comfort Dental</strong>, <em>Dentist / Partner</em></p>
+      <p>09/2011-02/2013, Pueblo, CO</p>
+      <ul>
+        <li>Practiced comprehensive general dentistry in urban six chair dental practice with rotating twelve hour shifts</li>
+        <li>Performed end of month</li>
+      </ul>
+    </section>
+
+    <section class="counter">
+      <p>You are visitor number:</p>
+      <h3 id="count"></h3>
+
+    </section>
+
+
+    <!-- Scripts -->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+
+  </article>
+
+</body>
+
+</html>
