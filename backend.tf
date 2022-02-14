@@ -30,9 +30,9 @@ resource "aws_lambda_function" "lambda" {
   ]
 }
 
-###################################
+####################################
 # Lambda Role and Permissions
-###################################
+####################################
 
 resource "aws_iam_role" "lambda_role" {
   name               = "lambda_role"
