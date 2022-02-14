@@ -47,9 +47,9 @@ jobs:
     runs-on: ubuntu-latest
     needs: terraform
       
+    # Docker image with Cypress pre-installed
+    # https://github.com/cypress-io/cypress-docker-images/tree/master/included
+    container: cypress/included:9.4.1
     steps:
-      - name: Cypress Run
-        uses: cypress-io/github-action@v2
-        with:
-          build: npm run build
-          start: npm start
+      - uses: actions/checkout@v1
+      - run: cypress run
