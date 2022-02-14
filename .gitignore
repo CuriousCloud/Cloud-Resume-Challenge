@@ -11,9 +11,9 @@ cypress-combined-report.json
 cypress/fixtures
 cypress/support
 cypress/plugins
-main.yml
 git-crypt-key
 user_pubkey.gpg
 .gitattributes
+main.yml
 
 
