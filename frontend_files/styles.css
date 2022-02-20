@@ -26,13 +26,14 @@ hr {
   display: grid;
   grid-template-columns: 1.5em 1fr 1fr 1.5em;
   grid-template-rows: auto;
-  grid-column-gap: 3em;
+  grid-column-gap: 4em;
   grid-row-gap: 2em;
   grid-template-areas:
     ". name contact ."
-    ". coursework education ."
-    ". work projects-skills ."
-    ". work projects-skills ."
+    ". projects education ."
+    ". work certifications ."
+    ". work skills ."
+    ". work coursework ."
     ". counter counter .";
 }
 
@@ -63,6 +64,36 @@ hr {
   color: #2180f8;
 }
 
+.button {
+  background-color: #585858;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #E7E7DF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.15385;
+  margin: 10px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button:hover {
+  background-color: #07c;
+}
+
 .coursework {
   grid-area: coursework;
 }
@@ -75,8 +106,16 @@ hr {
   grid-area: education;
 }
 
-.projects-skills {
-  grid-area: projects-skills;
+.certifications {
+  grid-area: certifications;
+}
+
+.projects {
+  grid-area: projects;
+}
+
+.skills {
+  grid-area: skills;
 }
 
 .counter {
@@ -103,8 +142,10 @@ hr {
       ". name ."
       ". contact ."
       ". education ."
+      ". certifications ."
+      ". projects ."
+      ". skills ."
       ". coursework ."
-      ". projects-skills ."
       ". work ."
       ". counter .";
   }
