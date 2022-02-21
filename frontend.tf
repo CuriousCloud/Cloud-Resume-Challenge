@@ -124,8 +124,8 @@ resource "aws_cloudfront_distribution" "cf" {
     compress               = true
 
     min_ttl     = 0
-    default_ttl = 5 * 60
-    max_ttl     = 60 * 60
+    default_ttl = 0
+    max_ttl     = 0
 
     forwarded_values {
       headers      = []
