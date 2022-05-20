@@ -94,7 +94,7 @@ locals {
     "png"  = "image/png"
     "svg"  = "image/svg+xml"
     "txt"  = "text/plain"
-    "doc"  = "document"
+    "doc"  = "application/msword"
   }
 }
 
